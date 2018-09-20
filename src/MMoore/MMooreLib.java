@@ -21,7 +21,7 @@ public class MMooreLib {
             -Have not determined whether the function needs recursion to work.
 
              Tasks accomplished/things that need to be tested:
-            -**/
+            -Finish GCF brainstorming/implementation**/
         //GCF determiner.
         if (num1>num2)
         {
