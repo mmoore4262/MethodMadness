@@ -1,3 +1,4 @@
+//Matthew Moore 9/20/18
 package MMoore;
 
 public class MMooreLib {
@@ -10,67 +11,28 @@ public class MMooreLib {
     }
     public static int leastCommonMultiple(int num1, int num2, int num3)
     {
-        int init1=0;
-        int init2=0;
-        int init3=0;
-        int checkpoint=1;
-        int equivChecker=0;
-        int equivChecker2=0;
+        //takes in 3 integers,  returns the least common multiple of all three
+        /**planning on using algorithm that takes two parameters, finds the gcf(presently not developed of two ints,
+            divides GCF into either number, takes quotient and multiply by other number in the first set of two integers
+             Use function again, to test for LCM of num3 and LCM of the two ints just evaluated. Algorithm written in notebook.
 
-        if (num1==num2 && num2==num3)
+             What is missing in completing the functionality:
+            -Have not defined the set of instructions needed to find GCF
+            -Have not determined whether the function needs recursion to work.
+
+             Tasks accomplished/things that need to be tested:
+            -**/
+        //GCF determiner.
+        if (num1>num2)
         {
-            return(num1);
-        }
-        for (int i=1; checkpoint!=2;i++)
-        {
-            if (num1<num2 && num1<num3)
+            for (int i=0; i<num2; i++)
             {
-                init1=num1*i;
-                if (init1==num2)
-                {
-                    checkpoint+=1;
-                    equivChecker=init1;
-                }
-                if (init1==num3)
-                {
-                    checkpoint+=1;
-                    equivChecker2=init1;
-                }
+
             }
-            if (num2<num1 && num2<num3)
-            {
-                init1=num2*i;
-                if (init1==num1)
-                {
-                    checkpoint+=1;
-                    equivChecker=init1;
-                }
-                if (init1==num3)
-                {
-                    checkpoint+=1;
-                    equivChecker2=init1;
-                }
-            }
-            if (num3<num2 && num3<num1)
-            {
-                init1=num3*i;
-                if (init1==num2)
-                {
-                    checkpoint+=1;
-                    equivChecker=init1;
-                }
-                if (init1==num1)
-                {
-                    checkpoint+=1;
-                    equivChecker2=init1;
-                }
-            }
-        }
-        if (equivChecker==equivChecker2)
-        {
 
         }
-        return()
+
+
 
     }
 }
